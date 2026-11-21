@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "areaperimeter"
+version = "0.1.0"
+description = "面积与周长：常见平面图形计算、SVG 图示与练习单生成"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "math", "geometry", "teaching"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+areaperimeter = "areaperimeter.cli:main"
+
+[tool.setuptools]
+packages = ["areaperimeter"]
